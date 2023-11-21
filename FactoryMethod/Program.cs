@@ -1,2 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using FactoryMethod;
+
+BebidaEmbriagante bebida = Creador.CrearBebida(Creador.VINO_TINTO);
+
+Console.WriteLine($"Me embriaga {bebida.CuantoMeEmbriagaPorHora()} por hora");
